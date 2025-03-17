@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Dashboard</h1>
+
+    <h2>Sauvegarder des mots de passe</h2>
+    <form id="savePasswordsForm">
+        <label for="passwords">Mots de passe (séparés par des virgules):</label>
+        <input type="text" id="passwords" name="passwords" required>
+        <button type="submit">Sauvegarder</button>
+    </form>
+    
+    <h2>Générer un mot de passe</h2>
+    <button id="generatePassword">Générer</button>
+
+    <h2>Décrypter les mots de passe</h2>
+    <button id="decryptPasswords">Décrypter</button>
+
+    <div id="resultContainer"></div>
+    <button id="logout">Se déconnecter</button>
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
